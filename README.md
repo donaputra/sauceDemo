@@ -12,15 +12,18 @@ The purpose of SauceDemo is to provide a realistic and interactive environment f
 
 ## 🛠 Tools & Language
 **Manual:**  
+
 <a href="https://www.saucedemo.com/"><img src="https://img.shields.io/badge/-sauceDemo-f54242.svg?style=for-the-badge&logo=sauceDemo&logoColor=red" alt="sauceDemo"/></a>
 
 **Automation:**  
+
 <a href="https://www.jetbrains.com/idea/"><img src="https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white" alt="IntellijIDEA"/></a>
 <a href="https://www.java.com/en/"><img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white" alt="Java"/></a>
 <a href="https://maven.apache.org/"><img src="https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white" alt="Apache Maven"/></a>
 <a href="https://www.java.com/en/"><img src="https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white" alt="Google Chrome"/></a>
 
-**Framework for automation:**  
+**Framework for automation:** 
+
 <a href="https://www.selenium.dev/"><img src="https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white" alt="Selenium"/></a>
 <a href="https://www.selenium.dev/"><img src="https://img.shields.io/badge/-cucumber-4bc47b?style=for-the-badge&logo=CucumberColor=black" alt="Cucumber"/></a>
 
