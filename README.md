@@ -13,7 +13,9 @@ The purpose of SauceDemo is to provide a realistic and interactive environment f
 ## 📓 Documentation
 
 ## 📝 Reports
-
+<p align="center">
+<img align="center" width="800px" height="400px" src="https://github.com/donaputra/sauceDemo/blob/main/src/test/resources/file/Screenshot%202023-03-11%20095714.png" alt="Report"/>
+</p>
 
 ## 🛠 Tools & Language
 **Manual:**  
