@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 
 public class CheckOutPage {
 
@@ -80,7 +79,7 @@ public class CheckOutPage {
 
     //------------------------------------------BATAS---------------------------------------------//
 
-    @FindBy(xpath = "//button[@id='finish']")
+    @FindBy(id = "finish")
     private WebElement btnFinish;
 
     public void clickFinish(){
@@ -89,8 +88,8 @@ public class CheckOutPage {
 
     //------------------------------------------BATAS---------------------------------------------//
 
-    public boolean checkOutComplete() {
-        String a = driver.findElement(By.xpath("//h2[@class='complete-header']")).getText();
+    public boolean checkOutComplete(String complete) {
+        String a = driver.findElement(By.cssSelector(".complete-header")).getText();
         return true;
     }
 

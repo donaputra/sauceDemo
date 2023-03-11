@@ -82,12 +82,11 @@ public class PurchaseSteps {
     }
 
     @Then("User input \"(.*)\" as firstName, \"(.*)\" as lastName and \"(.*)\" as postalCode")
-    public void inputCredential(String firstName1, String lastName1, String postalCode1) throws InterruptedException {
+    public void inputCredential(String firstName1, String lastName1, String postalCode1){
         CheckOutPage checkOutPage = new CheckOutPage(webDriver);
         checkOutPage.setFirstName(firstName1);
         checkOutPage.setLastName(lastName1);
         checkOutPage.setPostalCode(postalCode1);
-        Thread.sleep(3000);
     }
 
     @Then("User click continue")
@@ -113,40 +112,14 @@ public class PurchaseSteps {
         Thread.sleep(3000);
     }
 
-    @And("CHECKOUT COMPLETE! and showing \"THANK YOU FOR YOUR ORDER\" text")
-    public void verifyCheckOutComplete() throws InterruptedException {
+    @And("CHECKOUT COMPLETE! and showing \"(.*)\" text")
+    public void verifyCheckOutComplete(String complete) throws InterruptedException {
         CheckOutPage checkOutPage = new CheckOutPage(webDriver);
-        Assert.assertTrue(checkOutPage.checkOutComplete());
+        Assert.assertTrue(checkOutPage.checkOutComplete(complete));
         Thread.sleep(3000);
     }
 
 }
 
-    //User input "Dona" as firstName , "Putra" as lastName and "16152" as postalCode
-
-
-//    @And("User sort checkout \"(.*)\" as products to cart")
-//    public void addProductToChart(String products) throws InterruptedException {
-//        CheckOutPage checkOutPage = new CheckOutPage(webDriver);
-//        checkOutPage.clickBasket2();
-//        Thread.sleep(3000);
-//    }
-
-
-    //    @And("User sort product list by name Z to A")
-//    public void selectProductContainer() throws InterruptedException {
-//        InventoriPage inventoriPage = new InventoriPage(webDriver);
-//        String a = "Name (Z to A)";
-//        inventoriPage.sortProductBy(a);
-//        Thread.sleep(3000);
-//    }
-
-
-
-//    @And("User verify that \"(.*)\" as products in a list")
-//    public void verifyListOfProduct(String products) {
-//        CheckOutPage checkOutPage = new CheckOutPage(webDriver);
-//        Assert.assertTrue(checkOutPage.displayCheckOutPage());
-//    }
 
 

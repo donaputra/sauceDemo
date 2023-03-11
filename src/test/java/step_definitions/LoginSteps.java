@@ -28,12 +28,14 @@ public class LoginSteps {
             loginPage.setUserName(userName);
             loginPage.setPassword(password);
             loginPage.clickLogin();
+
         }
 
         @Then("User see error \"(.*)\" on login page")
-        public void errorText(String errorText){
+        public void errorText(String errorText) throws InterruptedException {
         LoginPage loginpage = new LoginPage(webDriver);
             Assert.assertEquals(errorText, loginpage.getErrorText());
+            Thread.sleep(2000);
         }
 
 }

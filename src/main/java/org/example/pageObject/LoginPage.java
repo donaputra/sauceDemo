@@ -43,7 +43,7 @@ public class LoginPage {
 
     //------------------------------------------BATAS---------------------------------------------//
 
-    @FindBy(id = "//h3")
+    @FindBy(css = "h3")
     private WebElement errorText;
 
     public String getErrorText(){
